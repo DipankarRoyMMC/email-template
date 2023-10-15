@@ -1,0 +1,944 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>*|MC:SUBJECT|*</title>
+        <style type="text/css">
+			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			/* ========== Page Styles ========== */
+
+			#bodyCell{padding:20px;}
+			#templateContainer{width:600px;}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			body, #bodyTable{
+				/*@editable*/ background-color:#efeeea;
+			}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			#bodyCell{
+				/*@editable*/ border-top:4px solid #BBBBBB;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1{
+				/*@editable*/ color:#000 !important;
+				display:block;
+				/*@editable*/ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:120%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2{
+				/*@editable*/ color:#000 !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:23px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:120%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3{
+				/*@editable*/ color:#000 !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				/*@editable*/text-transform:uppercase;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:15px;
+				margin-left:0;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4{
+				/*@editable*/ color:#000 !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				/*@editable*/ text-transform:uppercase;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+			}
+
+			/* ========== Header Styles ========== */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color and bottom border for your email's preheader area.
+			* @theme header
+			*/
+			#templatePreheader{
+				/*@editable*/ background-color:#efeeea;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent{
+				/*@editable*/ color:#808080;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:125%;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#606060;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and borders for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#efeeea;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding-top:0;
+				/*@editable*/ padding-right:0;
+				/*@editable*/ padding-bottom:0;
+				/*@editable*/ padding-left:0;
+				/*@editable*/ text-align:left;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+
+			/* ========== Body Styles ========== */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color and borders for your email's body area.
+			*/
+			#templateBody{
+				/*@editable*/ background-color:#FFFFFF;
+			}
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent{
+				/*@editable*/ color:#000;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+				max-width:560px;
+			}
+
+			/* ========== Column Styles ========== */
+
+			.templateColumnContainer{width:260px;}
+
+			/**
+			* @tab Columns
+			* @section column style
+			* @tip Set the background color and borders for your email's column area.
+			*/
+			#templateColumns{
+				/*@editable*/ background-color:#F4F4F4;
+			}
+
+			/**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				padding-top:0;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section left column link
+			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
+			*/
+			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				padding-top:0;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column link
+			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
+			*/
+			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			.leftColumnContent img, .rightColumnContent img{
+				display:inline;
+				height:auto;
+				max-width:260px;
+			}
+
+			/* ========== Footer Styles ========== */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and borders for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent{
+				/*@editable*/ color:#000;
+				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+				/*@editable*/ color:#444;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+				/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+				#bodyCell{padding:10px !important;}
+
+				/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+				/* ======== Page Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section template width
+				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+				*/
+				#templateContainer{
+					max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 1
+				* @tip Make the first-level headings larger in size for better readability on small screens.
+				*/
+				h1{
+					/*@editable*/ font-size:24px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 2
+				* @tip Make the second-level headings larger in size for better readability on small screens.
+				*/
+				h2{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 3
+				* @tip Make the third-level headings larger in size for better readability on small screens.
+				*/
+				h3{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 4
+				* @tip Make the fourth-level headings larger in size for better readability on small screens.
+				*/
+				h4{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/* ======== Header Styles ======== */
+
+				#templatePreheader{} /* Hide the template preheader to save space */
+
+				/**
+				* @tab Mobile Styles
+				* @section header image
+				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				#headerImage{
+					height:auto !important;
+					/*@editable*/ max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section header text
+				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.headerContent{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Body Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.bodyContent{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Column Styles ======== */
+
+				.templateColumnContainer{display:block !important; width:100% !important;}
+
+				/**
+				* @tab Mobile Styles
+				* @section column image
+				* @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				.columnImage{
+					height:auto !important;
+					/*@editable*/ max-width:480px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section left column text
+				* @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.leftColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section right column text
+				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.rightColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Footer Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section footer text
+				* @tip Make the body content text larger in size for better readability on small screens.
+				*/
+				.footerContent{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:150% !important;
+				}
+
+				.footerContent a{} /* Place footer social and utility links on their own lines, for easier access */
+			}
+		</style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            	<tr>
+                	<td align="center" valign="top" id="bodyCell">
+                    	<!-- BEGIN TEMPLATE // -->
+                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                          <!-- PREHEADER START  -->
+                        	<tr>
+                            <td align="center" valign="top">
+                                <!-- BEGIN PREHEADER // -->
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                                      <tr>
+                                          <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                          <td align="center" valign="top" width="180" class="preheaderContent" style="padding-top:15px; padding-right:20px; padding-bottom:15px; padding-left:20px;" mc:edit="preheader_content01">
+                                              Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                          </td>
+                                          <!-- *|END:IF|* -->
+                                      </tr>
+                                  </table>
+                                  <!-- // END PREHEADER -->
+                            </td>
+                          </tr>
+                          <!-- PREHEADER END  -->
+
+                          <!-- HEADER START  -->
+                        	<tr>
+                            <td align="center" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader" style="background-color: #ffe01b;">
+                                <tr>
+                                  <td style="padding-top:50px" valign="top" align="center">
+                                    <a href="#">
+                                      <img src="https://i.postimg.cc/JnTrw1NW/logo.png" alt="Mailchimp Logo" width="200">
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding:30px 15px" valign="top" align="center">
+                                    <h1>The newest information,<br> innovation, and inspiration <br> from Mailchimp</h1>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom:30px;background-color: #fff;" valign="top" class="headerContent">
+                                      <img src="https://i.postimg.cc/RhXnD5F3/animated-img.gif" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                    </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- HEADER END  -->
+
+                          <!-- 1ST ROW COLUMN START  -->
+                          <tr>
+                            <td align="center" valign="top">
+                              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns" style="background-color: #fff;">
+                                <tr mc:repeatable>
+                                  <!-- left column -->
+                                  <td style="padding-top:20px" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td class="leftColumnContent"  valign="top">
+                                          <a href="#">
+                                            <img class="columnImage" src="https://i.postimg.cc/R0kztXc2/img1.jpg" alt="Left Column Image" width="260" style="max-width:260px;width:100%">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="leftColumnContent" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: normal;line-height:22px;padding-top:0" valign="top">
+                                          <h3>PRODUCT SPOTLIGHT</h3>
+                                          <h2>Pre-Build Customer Journey</h2>
+                                          Pre-Build Customer Journey, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem obcaecati facilis eos nemo vitae quibusdam voluptatum vel velit voluptate ea? <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;color:#333;text-decoration: none;border-bottom:2px solid #333;;" href="#">Explore custom journey</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- left column end  -->
+
+                                  <!-- right column start  -->
+                                  <td style="padding-top:20px" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td class="rightColumnContent"  valign="top">
+                                          <a href="#">
+                                            <img class="columnImage" src="https://i.postimg.cc/4y56t2h5/img2.jpg" alt="Left Column Image" width="260" style="max-width:260px;width:100%">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="rightColumnContent" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: normal;line-height:22px;padding-top:0" valign="top">
+                                          <h3>PRODUCT SPOTLIGHT</h3>
+                                          <h2>Pre-Build Customer Journey</h2>
+                                          Pre-Build Customer Journey, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem obcaecati facilis eos nemo vitae quibusdam voluptatum vel velit voluptate ea? <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;color:#333;text-decoration: none;border-bottom:2px solid #333;;" href="#">Explore custom journey</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- right column end  -->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- 1ST ROW COLUMN END  -->
+
+                          <!-- 2ST ROW COLUMN START  -->
+                          <tr>
+                            <td align="center" valign="top">
+                              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns" style="background-color: #fff;">
+                                <tr mc:repeatable>
+                                  <!-- left column -->
+                                  <td style="padding-top:20px" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td class="leftColumnContent"  valign="top">
+                                          <a href="#">
+                                            <img class="columnImage" src="https://i.postimg.cc/QxCXwXQq/img3.jpg" alt="Left Column Image" width="260" style="max-width:260px;width:100%">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="leftColumnContent" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: normal;line-height:22px;padding-top:0" valign="top">
+                                          <h3>integration</h3>
+                                          <h2>Connect Your Google Business Profile</h2>
+                                          Connect your google business profile, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem obcaecati facilis eos nemo vitae quibusdam voluptatum vel velit voluptate ea? <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;color:#333;text-decoration: none;border-bottom:2px solid #333;;" href="#">Connect Google Business Profile</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- left column end  -->
+
+                                  <!-- right column start  -->
+                                  <td style="padding-top:20px" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td class="rightColumnContent"  valign="top">
+                                          <a href="#">
+                                            <img class="columnImage" src="https://i.postimg.cc/nVP8sqmv/img4.jpg" alt="Left Column Image" width="260" style="max-width:260px;width:100%">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="rightColumnContent" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: normal;line-height:22px;padding-top:0" valign="top">
+                                          <h3>new feature</h3>
+                                          <h2>Connect Google Worksapce With Your Domain</h2>
+                                          Create a custom email address, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem obcaecati facilis eos nemo vitae quibusdam voluptatum vel velit voluptate ea? <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;color:#333;text-decoration: none;border-bottom:2px solid #333;;" href="#">Get more from your domain</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- right column end  -->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!--2ST ROW COLUMN END  -->
+
+                          <!-- TEMPALTE BODY START  -->
+                        	<tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                  <tr>
+                                    <td valign="top" align="center" class="bodyContent">
+                                      <img src="https://i.postimg.cc/gJXpbhmq/img5.png" alt="bodyImage" width="100%">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" valign="top" class="bodyContent" mc:edit="body_content" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height: 24px;">
+                                        <h3>Marketing Tips</h3>
+                                        <h1 style="font-family: Arial, Helvetica, sans-serif;font-size:28px;font-weight: bold;">E-commerce Tips Delivered to Your Inbox</h1>
+                                        when you're  new to  marketing or already Creating a good-looking email is simple
+                                        Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles.
+                                        <br /><br>
+                                        <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;text-decoration: none;color:#333;border-bottom:2px solid #333;" href="#">Subscribe to the newsletter</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                            </td>
+                          </tr>
+                          <!-- TEMPLATE BODY END  -->
+
+                          <!-- 3RD ROW START  -->
+                          <tr>
+                            <td align="center" valign="top">
+                              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatecolumns" style="background-color: #fff" >
+                                <tr mc:repeatable>
+                                  <!-- left column  -->
+                                  <td align="center" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td valign="top">
+                                          <a href="#"><img src="https://i.postimg.cc/zGG2b16V/img6.jpg" alt="column image" class="columnImage" width="260"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height: 22px;color:#333;padding-top:0;" valign="top">
+                                          <h3>partner spotlight</h3>
+                                          <h2>Power Partner: The ROI Rogue</h2>
+                                          Mailchimp partners have skill that can benefit and business. Learn now  partner Emily Ryan helped one online retailed and  emails that got big results.
+                                          <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;text-decoration: none;border-bottom:2px solid #333;color:#333;" href="#">Read more</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- left column end  -->
+
+                                  <!-- right column  -->
+                                  <td align="center" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td valign="top">
+                                          <a href="#"><img src="https://i.postimg.cc/NjQVYXQq/img7.jpg" alt="column image" class="columnImage" width="260"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height: 22px;color:#333;padding-top:0;" valign="top">
+                                          <h3>expert tips</h3>
+                                          <h2>Give Billing Your Top Billing</h2>
+                                          Mailchimp partners have skill that can benefit and business. Learn now  partner Emily Ryan helped one online retailed and  emails that got big results.
+                                          <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;text-decoration: none;border-bottom:2px solid #333;color:#333;" href="#">Read more</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- right column end  -->
+                                </tr>
+
+                                <tr mc:repeatable>
+                                  <!-- left column  -->
+                                  <td align="center" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td valign="top">
+                                          <a href="#"><img src="https://i.postimg.cc/L4G7nXM5/img8.jpg" alt="column image" class="columnImage" width="260"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height: 22px;color:#333;padding-top:0;" valign="top">
+                                          <h3>inspiration from courier</h3>
+                                          <h2>Subscribe to Courier Weekly</h2>
+                                          Work better Live smarter.Mailchimp partners have skill that can benefit and business. Learn now  partner Emily Ryan helped one online retailed and  emails that got big results.
+                                          <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;text-decoration: none;border-bottom:2px solid #333;color:#333;" href="#">Sign up here</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- left column end  -->
+
+                                  <!-- right column  -->
+                                  <td align="center" valign="top" class="templateColumnContainer">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td valign="top">
+                                          <a href="#"><img src="https://i.postimg.cc/zG70SD4n/img9.jpg" alt="column image" class="columnImage" width="260"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height: 22px;color:#333;padding-top:0;" valign="top">
+                                          <h3>courier spotlight</h3>
+                                          <h2>Stroy of brand: In-N-Out Burger </h2>
+                                          From out how merchanging, menus, Mailchimp partners have skill that can benefit and business. Learn now  partner Emily Ryan helped one online retailed and  emails that got big results.
+                                          <br><br>
+                                          <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;text-decoration: none;border-bottom:2px solid #333;color:#333;" href="#">Read this story</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- right column end  -->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- 3RD ROW END  -->
+
+                          <!-- BORDER START  -->
+                          <tr>
+                            <td align="center" valign="top">
+                              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fff;">
+                                <tr>
+                                  <td style="padding:20px" align="center" valign="top">
+                                    <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%" style="background-color: #fff;">
+                                      <tr>
+                                        <td style="border-top:2px solid #eaeaea;border-bottom:2px solid #eaeaea" align="center" valign="top">
+                                          <h4 style="margin:0">Year Of Rest</h4>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- BORDER END  -->
+
+                          <!-- 4TH ROW START  -->
+                        	<tr>
+                            <td align="center" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns" style="background-color: #fff;">
+                                <tr mc:repeatable>
+                                  <!-- left column  -->
+                                  <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height: 22px;color:#333;padding-top:0" valign="top" class="leftColumnContent" mc:edit="left_column_content">
+                                              <h2>Mailchimp Support Year of Rest</h2>
+                                              Getaway and Rachel Cargle. noted with plus and minus signs so that you can add and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                              <br><br>
+                                              <a style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight: bold;text-decoration: none;border-bottom:2px solid #333;color:#333;" href="#">Learn more</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- left column end  -->
+
+                                  <!-- right column  -->
+                                  <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td class="rightColumnContent">
+                                          <img src="https://i.postimg.cc/CL1tKQ5h/img10.jpg" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!-- right column end  -->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- 4TH ROW END  -->
+
+                          <!-- DIVIVER START  -->
+                          <tr>
+                            <td align="center" valign="top">
+                              <table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%" style="background-color: #fff;">
+                                <tr>
+                                  <td valign="top" style="padding:20px 20px 50px;line-height: 20px;font-size:20px">
+                                    <span style="display: block;width:100%;height:2px;background-color:#eaeaea;font-size:0;line-height: 2px;">&nbsp;</span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- DIVIVER END  -->
+
+                          <!-- FOOTER START  -->
+                        	<tr>
+                            <td align="center" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" style="background-color: #fedf1a;">
+                                <tr>
+                                  <td style="padding:50px 20px 10px" align="center" valign="top">
+                                    <a href="#"><img src="https://i.postimg.cc/gJybbSsV/img11.png" alt="image logo" width="200"></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: Arial, Helvetica, sans-serif;font-size:14px;font-weight: bold;color:#444;padding: 20px 20px;" align="center" valign="top">
+                                     <h4><span> &copy;2023</span> Mailchimp</h4>
+                                    675 Ponse De Leon Ave NE, Suite 5000, Dhaka, Bangladesh.
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td align="center" valign="top"  valign="top" class="footerContent" mc:edit="footer_content00">
+                                      <a href="*|TWITTER:PROFILEURL|*">Unsubscribe</a>
+                                      &nbsp;&nbsp;
+                                      <a href="*|FACEBOOK:PROFILEURL|*">View on Browser</a>
+                                      &nbsp;&nbsp;
+                                      <a href="*|FORWARD|*">Terms And Condition</a>
+                                      &nbsp; &nbsp;
+                                      <a href="*|FORWARD|*">Privacy Policy</a>
+                                      &nbsp;
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td align="center" valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
+                                    <a style="display: inline-block;width:20px;height:20px" href="#"><img width="20" src="https://i.postimg.cc/3rVpytFj/facebook.png" alt="facebook logo"></a> &nbsp;&nbsp;
+                                    <a style="display: inline-block;width:20px;height:20px" href="#"><img width="20" src="https://i.postimg.cc/CKhfyXw0/twitter.png" alt="twitter"></a>&nbsp;&nbsp;
+                                    <a style="display: inline-block;width:20px;height:20px" href="#"><img width="20" src="https://i.postimg.cc/DyGjjjv5/instagram.png" alt="instagram"></a>&nbsp;&nbsp;
+                                    <a style="display: inline-block;width:20px;height:20px" href="#"><img width="20" src="https://i.postimg.cc/TwS0QmBZ/linkedin.png" alt="linedin"></a>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td align="center" valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
+                                    <a href="#"><img width="100" src="https://i.postimg.cc/hjzDHW3f/playstore.png" alt="google playstore"></a>&nbsp;&nbsp;
+                                    <a href="#"><img width="100" src="https://i.postimg.cc/3N2Kxjhh/apple-sote.png" alt="apple app store"></a>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td style="font-family: Arial, Helvetica, sans-serif;font-size:15px;font-weight: normal;color:#333;line-height: 22px;padding:30px 20px;">
+                                    Mailchimp is a  registered trademark of the Rocket Science Group. Apple and the Apple logo are trademarks of Apple Inc, registed in the U.S and other countries. Mac App Stores is a service mark of Apple Inc.Google  Play and the Google Play logo are trademarks of Google Inc.
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- FOOTER END  -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
