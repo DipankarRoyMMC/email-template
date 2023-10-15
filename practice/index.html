@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        margin: 0;
+        padding:0;
+      }
+      body, #bodyTable{
+        background-color: #eee;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        line-height: 22px;
+        font-weight: normal;
+        color:#444;
+      }
+      #bodyCell{
+        padding:20px;
+        border-top:4px solid #ccc;
+      }
+      /* preheader  */
+      #templatePreheader{
+        background-color: #ddd;
+      }
+
+      @media only screen and (max-width:480px){
+        #templateContainer{
+          max-width: 600px;
+          width: 100%;
+        }
+        .fullwidth_btn{
+          width:100% !important;
+        }
+
+        .templateColumnContainer, n{
+          display: block !important;
+          width: 100%;
+        }
+        .columnImage{
+          display: block !important;
+          width:100% !important;
+        }
+
+        .res_column{
+          max-width: 480px !important;
+          width: 100% !important;
+        }
+      }
+    </style>
+
+    <!-- [if mso]>
+    <style>
+      .res_column{
+        display:block !important;
+        width:100% !important;
+      }
+    </style>
+    <![endif]  -->
+</head>
+<body>
+  <center>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" id="bodyTable">
+      <tr>
+        <td align="center" valign="top" id="bodyCell">
+          <!-- TEMPLATE CONTAINER START  -->
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+
+            <!-- PREHEADER START  -->
+            <tr>
+              <td align="center" valign="top">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                  <tr>
+                    <td class="preheaderContent" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;padding:20px 20px;line-height: 110%;" align="center" valign="top">
+                      Don't display Correctly<br>
+                      <a style="font-family: Arial, Helvetica, sans-serif;color:#000;text-decoration: underline;" href="#">View On Browser</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- PREHEADER END  -->
+
+            <!-- HEADER START  -->
+            <tr>
+              <td align="center" valign="top">
+                <table role="presentation" border="0" cellpadding="15" cellspacing="0" width="100%" style="background-color: #fff;">
+                  <tr>
+                    <td>
+                      <img src="https://placehold.co/600x250" alt="banner image" width="100%" style="max-width: 600px;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- HEADER END  -->
+
+            <!-- BODY START  -->
+            <tr>
+              <td align="center" valign="top">
+                <table role="presentation" border="0" cellpadding="15" cellspacing="0" width="100%" id="templateBody" style="background-color: #ddd;">
+                  <tr>
+                    <td style="font-family: Arial, Helvetica, sans-serif;font-size:16px;">
+                      <h1 style="font-family: Arial, Helvetica, sans-serif;font-size:40px;color:#000;line-height: 40px;margin-bottom:10px;">Welcome to Higher Study</h1>
+                      Our study is best for any other institution in the world. dolor sit amet consectetur adipisicing elit. Expedita maiores eius facilis necessitatibus impedit magni esse veniam architecto. Odit eos iusto laboriosam quod incidunt officiis obcaecati amet, molestias pariatur cupiditate!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="fullwidth_btn">
+                        <tr>
+                          <td align="center" valign="top" style="background-color: #333;border-radius: 3px;">
+                            <a  style="font-family: Arial, Helvetica, sans-serif;font-size:15px;font-weight: bold;color:#fff;padding:15px 20px;text-decoration: none;display: inline-block;" href="#">Apply now</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- BODY END  -->
+            <!-- COLUMS START -->
+            <tr>
+              <td valign="top">
+                <div style="display: table;width:100%;background-color: #fff;" >
+                <!-- [if mso]>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns" style="
+                  background-color: #fff;">
+                <tr mc:repeatable>
+                <td valign="top" width="300" class="templateColumnContainer">
+                <![endif]  -->
+                  <div class="res_column" style="display: inline-block; min-width:250px;max-width:300px;width:100%">
+                    <table role="presentation" border="0" cellpadding="15" cellspacing="0" width="100%" style="background-color: #fff;" >
+                      <tr>
+                        <td valign="top">
+                          <table role="presentation" border="0" cellpadding="15" cellspacing="0" width="100%" style="background-color:#ccc;">
+                            <tr>
+                              <td valign="top">
+                                <img src="https://placehold.co/250x150" alt="columnImage" width="100%" style="max-width:480px" class="columnImage">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="top">
+                                <h3 style="font-size:18px;margin-bottom:5px;color:#000;font-weight: bold;">Left Column Content</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias esse officia! Qui ut obcaecati quos velit fugit, nam laudantium?
+                              </td>
+                            </tr>
+
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+
+                <!-- [if mso]>
+                </td>
+                <td width="300" valign="top" class="templateColumnContainer">
+                <![endif]  -->
+                  <div class="res_column" style="display: inline-block; min-width:250px;max-width: 300px;width:100%;">
+                  <table role="presentation" border="0" cellpadding="15" cellspacing="0" width="100%" style="background-color: #fff;" >
+                    <tr>
+                      <td valign="top">
+                        <table role="presentation" border="0" cellpadding="15" cellspacing="0" width="100%" style="background-color: #ccc;">
+                          <tr>
+                            <td valign="top">
+                              <img src="https://placehold.co/250x150" alt="columnImage" width="100%" style="max-width: 480px;" class="columnImage">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3 style="font-size:18px;margin-bottom:5px;color:#000;font-weight: bold;">
+                              Right column content</h3>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae dicta dolorem voluptate velit debitis nesciunt at aspernatur similique temporibus.
+
+                            </td>
+                          </tr>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- [if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]  -->
+              </div>
+
+              </td>
+            </tr>
+            <!-- COLUMNS END  -->
+
+          </table>
+          <!-- TEMPLATE CONTAINER END  -->
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
